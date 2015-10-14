@@ -143,8 +143,7 @@ class ilCourseEmailSubscriptionGUI {
                 $subscriber->subscribeEmail($email);
 
             }
-
-
+            //git test
                 ilUtil::sendSuccess('Es wurden folgende Mitglieder eingeschrieben: ' . (implode(', ', $subscriber->getEmailsFound())), true);
                 ilUtil::sendInfo('Folgende E-Mail adressen konnten nicht gefunden werden: '.(implode(', ', $subscriber->getEmailsNotFound())), true);
             //$tpl->setContent("Du hast folgende E-Mails eingetragen: ".$email);
